@@ -4,6 +4,7 @@ require("plugins.colorscheme")
 require("plugins.dashboard")
 require("plugins.leetcode")
 require("plugins.cmp")
+require("plugins.lsp")
 
 if vim.g.neovide then
   vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h15"
