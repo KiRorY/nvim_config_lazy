@@ -7,10 +7,10 @@ require("plugins.cmp")
 require("plugins.lsp")
 
 if vim.g.neovide then
-  vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h15"
-  vim.g.neovide_cursor_trail_size = 0.3
-  vim.g.neovide_transparency = 0.95
-  vim.g.transparency = 0.3
-  vim.g.neovide_refresh_rate = 120
-  vim.g.remember_window_size = true
+    vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h15"
+    vim.g.neovide_cursor_trail_size = 0.3
+    vim.g.neovide_transparency = 0.95
+    vim.g.transparency = 0.4
+    vim.g.neovide_refresh_rate = 60
+    vim.g.neovide_remember_window_size = true
 end
