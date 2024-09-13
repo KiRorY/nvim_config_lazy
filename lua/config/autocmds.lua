@@ -2,7 +2,7 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 vim.api.nvim_create_autocmd({ "FileType" }, {
-    pattern = { "markdown", "cpp", "c" },
+    pattern = { "markdown", "cpp", "c", "python" },
     callback = function()
         vim.b.autoformat = false
         vim.diagnostic.enable(false)
