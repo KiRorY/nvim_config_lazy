@@ -1,12 +1,5 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-require("plugins.colorscheme")
-require("plugins.dashboard")
-require("plugins.leetcode")
-require("plugins.cmp")
-require("plugins.lsp")
-require("plugins.copilot")
-
 if vim.g.neovide then
     vim.opt.guifont = "JetBrainsMono Nerd Font Mono:h15"
     vim.g.neovide_cursor_trail_size = 0.3
