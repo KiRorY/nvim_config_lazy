@@ -1,8 +1,11 @@
 return {
-  {
     "neovim/nvim-lspconfig",
     opts = {
-      autoformat = false,
+        autoformat = false,
+        dignostics = {
+            float = {
+                border = "rounded",
+            },
+        },
     },
-  },
 }

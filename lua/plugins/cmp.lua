@@ -19,12 +19,17 @@ return {
     opts = function()
         vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
         local cmp = require("cmp")
+        local cmp_window = require("cmp.config.window")
         local defaults = require("cmp.config.default")()
         local auto_select = true
         return {
             auto_brackets = {}, -- configure any filetype to auto add brackets
             completion = {
                 completeopt = "menu,menuone,noinsert" .. (auto_select and "" or ",noselect"),
+            },
+            window = {
+                completion = cmp_window.bordered(),
+                documentation = cmp_window.bordered(),
             },
             preselect = auto_select and cmp.PreselectMode.Item or cmp.PreselectMode.None,
             mapping = cmp.mapping.preset.insert({
