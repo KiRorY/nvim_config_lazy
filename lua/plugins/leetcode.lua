@@ -2,7 +2,6 @@ return {
     {
         "kawre/leetcode.nvim",
         build = ":TSUpdate html",
-        cmd = "Leet",
         dependencies = {
             "nvim-telescope/telescope.nvim",
             "nvim-lua/plenary.nvim", -- required by telescope
@@ -13,6 +12,7 @@ return {
             "rcarriga/nvim-notify",
             "nvim-tree/nvim-web-devicons",
         },
+        cmd = "Leet",
         opts = {
             ---@type string
             arg = "leetcode.nvim",
@@ -21,6 +21,9 @@ return {
             storage = {
                 home = "~/Documents/code/kirory_leetcode/",
                 cache = vim.fn.stdpath("cache") .. "/leetcode",
+            },
+            plugins = {
+                non_standalone = true,
             },
         },
     },
