@@ -1,6 +1,6 @@
 return {
     {
-        "catppuccin/nvim",
+        "catppuccin",
         opts = {
             flavour = "latte",
             background = {
