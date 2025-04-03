@@ -1,3 +1,9 @@
+if vim.g.os == "Windows" then
+    HOME_PATH = "D:\\Code\\kirory_leetcode"
+else
+    HOME_PATH = "~/Workspace/code/kirory_leetcode"
+end
+
 return {
     {
         "kawre/leetcode.nvim",
@@ -19,7 +25,7 @@ return {
 
             ---@type lc.storage
             storage = {
-                home = "~/Documents/code/kirory_leetcode/",
+                home = HOME_PATH,
                 cache = vim.fn.stdpath("cache") .. "/leetcode",
             },
         },
