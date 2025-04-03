@@ -4,9 +4,6 @@ return {
         opts = {
             suggestion = {
                 enabled = true,
-                keymap = {
-                    accept = "<C-y>",
-                },
             },
             panel = { enabled = false },
             filetypes = {
