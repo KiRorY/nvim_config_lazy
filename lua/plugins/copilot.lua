@@ -10,6 +10,7 @@ return {
                 markdown = false,
                 help = true,
             },
+            copilot_model = "Claude Sonnet 4",
         },
     },
 }
