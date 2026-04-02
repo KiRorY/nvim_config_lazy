@@ -12,10 +12,6 @@ return {
         ---@type avante.Config
         opts = {
             -- 在此处添加任何选项
-            provider = "gemini",
-            behaviour = {
-                auto_approve_tool_permissions = false,
-            },
         },
         dependencies = {
             "nvim-lua/plenary.nvim",

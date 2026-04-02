@@ -21,5 +21,8 @@ return {
                 border = "rounded",
             },
         },
+        explorer = {
+            trash = true,
+        },
     },
 }
