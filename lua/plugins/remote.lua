@@ -6,5 +6,11 @@ return {
         "MunifTanjim/nui.nvim", -- To build the plugin UI
         "nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
     },
-    config = true,
+    config = function()
+        require("remote-nvim").setup({
+            ssh_config = {
+                scp_binary = "rsync",
+            },
+        })
+    end,
 }
